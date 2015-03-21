@@ -1,5 +1,8 @@
 $(document).ready(function(){
-	$(document).bind($('#tinderslide ul li').click(function(){
-		
-	});
+
 });
+
+function zoomIn(){
+	console.log("click, not dragged");
+	
+}

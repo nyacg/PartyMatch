@@ -150,6 +150,8 @@
 								$that.next();
 							});
 						}
+					} else if (opa <= 0.35){
+						zoomIn();
 					} else {
 						lastPosX = 0;
 						lastPosY = 0;

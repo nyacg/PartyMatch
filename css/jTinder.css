@@ -213,6 +213,11 @@ body {
 
 .actions a:active {
     transform: scale(0.85);
+    outline: 0;
+}
+
+.action a:focus {
+    outline: 0;
 }
 
 /* jTinder images */

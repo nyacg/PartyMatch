@@ -90,7 +90,7 @@ body {
 /* Like & dislike badge images */
 #tinderslide .like,
 #tinderslide .dislike {
-    background: url("../img/liked.png") no-repeat scroll 0 0;
+    background: url("../img/aye.png") no-repeat scroll 0 0;
     opacity: 0;
     height: 80px;
     position: absolute;
@@ -108,10 +108,15 @@ body {
     backface-visibility: hidden;
 }
 
+#tinderslide .like {
+    transform: rotate(-10deg); 
+}
+
 #tinderslide .dislike {
     right: 45px;
     left: auto;
-    background: url("../img/nope.png") no-repeat scroll 0 0;
+    background: url("../img/nay.png") no-repeat scroll 0 0;
+    transform: rotate(10deg);
 }
 
 /* Image container */

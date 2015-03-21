@@ -1,0 +1,11 @@
+PolicyName,Slug,Aliance,Con,DUP,Green,Ind,Lab,LDem,PC,Res,SDLP,SNP
+We should increase the top rate of income tax applying to income over 150 000 per year,increaseIncomeTax,-1,1,0,0,-1,-1,1,0,0,-1,0
+An adoption of a new global standard on automatic exchange of tax information is needed in order to reduce tax avoidance,globalTaxAvoidanceInfoExchange,0,1,-1,-1,1,-1,1,-1,-1,-1,-1
+We should extend the clawback of bank bonuses in cases of inappropriate behaviour,bankBonusesClawback,1,-1,1,1,1,1,-1,1,0,1,1
+We should Ban MPs Holding Paid Directorships and Consultancies,paidConsultancies,0,-1,0,0,1,1,-1,1,0,1,1
+Those On Jobseeker's Allowance Must be offered and Take Up a Job after a period of time or Lose Their Benefits,jobseecerAllowance,0,-1,1,1,-1,1,-1,1,1,1,1
+There should be a more extensive set of conditions met prior to consent for Fracking being given,fracking,0,1,-1,-1,-1,-1,1,-1,-1,-1,-1
+Health and safety at work should be made the general duty of self-employed persons,healthAndSafety,0,-1,1,1,-1,1,-1,1,0,1,-1
+Failing to report harm to a child should be an offence,reportHarmOffence,0,-1,-1,1,1,1,-1,-1,0,1,0
+Cigarretes should all have the same packaging,cigarretesSamePackaging,1,0.54,0.6,1,1,1,1,1,1,1,0
+Child abduction warning notices and orders should be introduced as well as related provisions including the power of arrest for the breach of such a notice or order,childAbductionWarnings,0,-1,1,1,-1,1,-1,1,0,1,0

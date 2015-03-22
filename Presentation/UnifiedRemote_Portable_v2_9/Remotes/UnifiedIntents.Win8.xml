@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ur:Remote xmlns:ur="http://unifiedremote.com/schemas/remote.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://unifiedremote.com/schemas/remote.xsd http://unifiedremote.com/schemas/remote.xsd"
+  Name="Windows 8" Icon="UnifiedIntents.Win8.png" Author="Unified Intents" Description="Windows 8 navigation.">
+
+  <Actions>
+    <Action Name="Left"><ActionRef Target="Input" Name="Press" Extra="LEFT" /></Action>
+    <Action Name="Right"><ActionRef Target="Input" Name="Press" Extra="RIGHT" /></Action>
+    <Action Name="Up"><ActionRef Target="Input" Name="Press" Extra="UP" /></Action>
+    <Action Name="Down"><ActionRef Target="Input" Name="Press" Extra="DOWN" /></Action>
+    <Action Name="Select"><ActionRef Target="Input" Name="Press" Extra="RETURN" /></Action>
+    <Action Name="Windows"><ActionRef Target="Input" Name="Press" Extra="LWIN" /></Action>
+
+    <Action Name="Apps">
+      <ActionRef Target="Input" Name="Stroke">
+        <Extra>LWIN</Extra>
+        <Extra>VK_Q</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Charms">
+      <ActionRef Target="Input" Name="Stroke">
+        <Extra>LWIN</Extra>
+        <Extra>VK_C</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="SnapLeft">
+      <ActionRef Target="Input" Name="Stroke">
+        <Extra>LWIN</Extra>
+        <Extra>LSHIFT</Extra>
+        <Extra>OEM_PERIOD</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="SnapRight">
+      <ActionRef Target="Input" Name="Stroke">
+        <Extra>LWIN</Extra>
+        <Extra>OEM_PERIOD</Extra>
+      </ActionRef>
+    </Action>
+
+    <Action Name="Explorer">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>VK_E</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Back">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>BACK</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Run">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>VK_R</Extra>
+      </ActionRef>
+      <ActionRef Name="@keyboard" />
+    </Action>
+
+    <Action Name="Zoom In">
+      <ActionRef Target="Input" Name="Stroke">
+        <Extra>LWIN</Extra>
+        <Extra>OEM_PLUS</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Zoom Out">
+      <ActionRef Target="Input" Name="Stroke">
+        <Extra>LWIN</Extra>
+        <Extra>OEM_MINUS</Extra>
+      </ActionRef>
+    </Action>
+  </Actions>
+
+  <Layout Scroll="none">
+    <Row>
+      <Button Icon="ZOOM_IN" OnClick="Zoom In" />
+      <Button Icon="UP" OnClick="Up" />
+      <Button Icon="ZOOM_OUT" OnClick="Zoom Out" />
+    </Row>
+    <Row>
+      <Button Icon="LEFT" OnClick="Left" />
+      <Button Icon="SELECT" OnClick="Select" />
+      <Button Icon="RIGHT" OnClick="Right" />
+    </Row>
+    <Row>
+      <Button Text="Apps" OnClick="Apps" />
+      <Button Icon="DOWN" OnClick="Down" />
+      <Button Text="Charms" OnClick="Charms" />
+    </Row>
+    <Row>
+      <Button Text="Snap Left" OnClick="SnapLeft" />
+      <Button Icon="WINDOWS" OnClick="Windows" />
+      <Button Text="Snap Right" OnClick="SnapRight" />
+    </Row>
+    <Row>
+      <Button Text="Explorer" OnClick="Explorer" />
+      <Button Icon="BACK" OnClick="Back" />
+      <Button Text="Run" OnClick="Run" />
+    </Row>
+  </Layout>
+  
+</ur:Remote>

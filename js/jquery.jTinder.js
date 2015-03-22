@@ -53,7 +53,7 @@
 		},
 
 		showPane: function (index) {
-			panes.eq(current_pane).hide();
+			panes.eq(current_pane).addClass("hidden").hide();
 			current_pane = index;
 		},
 

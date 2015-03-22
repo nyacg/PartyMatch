@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ur:Remote xmlns:ur="http://unifiedremote.com/schemas/remote.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://unifiedremote.com/schemas/remote.xsd http://unifiedremote.com/schemas/remote.xsd"
+  Name="Custom Run" Icon="exRun.png" Author="Itablish" Description="Example: launching different programs.">
+  <Actions>
+    <Action Name="Start Calculator">
+      <ActionRef Name="Run" Target="Core.Task" Extra="calc.exe"/>
+    </Action>
+    <Action Name="Start Notepad">
+      <ActionRef Name="Run" Target="Core.Task" Extra="notepad.exe"/>
+    </Action>
+    <Action Name="Start Vlc">
+      <ActionRef Name="Run" Target="Core.Task" Extra="%programfiles(x86)%\VideoLAN\VLC\vlc.exe"/>
+    </Action>
+    <Action Name="Start Paint">
+      <ActionRef Name="Run" Target="Core.Task" Extra="mspaint.exe"/>
+    </Action>
+    <Action Name="Start Internet Explorer">
+      <ActionRef Name="Run" Target="Core.Task" Extra="iexplore.exe"/>
+    </Action>
+    <Action Name="Start Remote Desktop">
+      <ActionRef Name="Run" Target="Core.Task" Extra="mstsc.exe"/>
+    </Action>
+    <Action Name="Start Windows Media Player">
+      <ActionRef Name="Run" Target="Core.Task" Extra="wmplayer.exe"/>
+    </Action>
+  </Actions>
+  <Layout Scroll="none">
+    <Row>
+      <Control Type="Button" OnClick="Start Calculator" Align="Center" Width="fill" Text="Calculator"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Start Notepad" Align="Center" Width="fill" Text="Notepad"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Start Vlc" Align="Center" Width="fill" Text="VLC"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Start Paint" Align="Center" Width="fill" Text="Paint"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Start Internet Explorer" Align="Center" Width="fill" Text="Internet Explorer"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Start Remote Desktop" Align="Center" Width="fill" Text="Remote Desktop"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Start Windows Media Player" Align="Center" Width="fill" Text="Windows Media Player"/>
+    </Row>
+  </Layout>
+</ur:Remote>

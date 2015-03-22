@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ur:Remote xmlns:ur="http://unifiedremote.com/schemas/remote.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://unifiedremote.com/schemas/remote.xsd http://unifiedremote.com/schemas/remote.xsd"
+  Name="Custom Mixed" Icon="exMixed.png" Author="Itablish" Description="Example: different sources in one remote.">
+  <Actions>
+    <Action Name="Vlc Play">
+      <ActionRef Name="Play/Pause" Target="Relmtech.VLC (Keyboard)" />
+    </Action>
+    <Action Name="Vlc Next">
+      <ActionRef Name="Next" Target="Relmtech.VLC (Keyboard)" />
+    </Action>
+    <Action Name="Vlc Previous">
+      <ActionRef Name="Previous" Target="Relmtech.VLC (Keyboard)" />
+    </Action>
+    <Action Name="Volume Up">
+      <ActionRef Name="Press" Target="Core.Input" Extra="VOLUME_UP" />
+    </Action>
+    <Action Name="Volume Down">
+      <ActionRef Name="Press" Target="Core.Input" Extra="VOLUME_DOWN" />
+    </Action>
+    <Action Name="Volume Mute">
+      <ActionRef Name="Press" Target="Core.Input" Extra="VOLUME_MUTE" />
+    </Action>
+    <Action Name="Lamp On">
+      <ActionRef Name="All On" Target="RickardP.Tellstick" />
+    </Action>
+    <Action Name="Lamp Of">
+      <ActionRef Name="All Off" Target="RickardP.Tellstick" />
+    </Action>
+    <Action Name="Mixed">
+      <ActionRef Name="All Off" Target="RickardP.Tellstick" />
+      <ActionRef Name="Volume Up" />
+      <ActionRef Name="Volume Up" />
+      <ActionRef Name="Play/Pause" Target="Relmtech.VLC (Keyboard)" />
+    </Action>
+  </Actions>
+  <Layout Scroll="none">
+    <Row Weight="wrap">
+      <Control Type="Label" Text="VLC Contols" Height="wrap" ColSpan="3" />
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="Vlc Previous" Align="Left" Icon="PREVIOUS" />
+      <Control Type="Orb" OnClick="Vlc Play" Align="Center" Icon="PLAY_PAUSE" />
+      <Control Type="Orb" OnClick="Vlc Next" Align="Right" Icon="NEXT" />
+    </Row>
+    <Row Weight="wrap">
+      <Control Type="Label" Text="Computer Volume" Height="wrap" ColSpan="3" />
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="Volume Up" Align="Left" Icon="VUP" />
+      <Control Type="Orb" OnClick="Volume Mute" Align="Center" Icon="VMUTE" />
+      <Control Type="Orb" OnClick="Volume Down" Align="Right" Icon="VDOWN" />
+    </Row>
+    <Row Weight="wrap">
+      <Control Type="Label" Text="Tellstick" Height="wrap" ColSpan="3" />
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="Lamp On" Align="Left" Text="All On" />
+      <Control Type="Orb" OnClick="Mixed" Align="Center" Text="Start" />
+      <Control Type="Orb" OnClick="Lamp Of" Align="Right" Text="All Off" />
+    </Row>
+  </Layout>
+</ur:Remote>

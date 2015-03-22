@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfSetting2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Setting2>
+    <Key>RemoteServer_Identity</Key>
+    <Value>ROBERTSLAPTOP</Value>
+    <Type>String</Type>
+  </Setting2>
+  <Setting2>
+    <Key>RemoteServer_WebKey</Key>
+    <Value>1CmtlBfUxxuGaUuFiv3oNTgcOAvMzNTl</Value>
+    <Type>String</Type>
+  </Setting2>
+  <Setting2>
+    <Key>RemoteServer_LastUpdateCheck</Key>
+    <Value>08-10-2013 10:10:53</Value>
+    <Type>String</Type>
+  </Setting2>
+</ArrayOfSetting2>

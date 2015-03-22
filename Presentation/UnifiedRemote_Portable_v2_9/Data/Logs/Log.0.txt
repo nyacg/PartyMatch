@@ -1,0 +1,784 @@
+2013-08-10 10:10:38.1701	Info	RemoteServer.Manager.StartForm	Searching for remotes...	
+2013-08-10 10:10:39.2712	Warn	RemoteServer.Remotes.RemoteProvider	Could not load types from assembly: Sunwave, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Verify(RemoteInfo remote)
+   at RemoteServer.Remotes.RemoteProvider.AddRemote(RemoteInfo remote)
+   at RemoteServer.Remotes.RemoteProvider.AddType(Type type)
+   at RemoteServer.Remotes.RemoteProvider.AddAssembly(Assembly assembly)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Verify(RemoteInfo remote)
+   at RemoteServer.Remotes.RemoteProvider.AddRemote(RemoteInfo remote)
+   at RemoteServer.Remotes.RemoteProvider.AddType(Type type)
+   at RemoteServer.Remotes.RemoteProvider.AddAssembly(Assembly assembly)
+2013-08-10 10:10:40.1012	Info	RemoteServer.Server	Starting server	
+2013-08-10 10:10:40.1892	Info	RemoteServer.Broadcast	Starting broadcast service	
+2013-08-10 10:10:40.5032	Info	RemoteServer.Server	HID client is not available	
+2013-08-10 10:10:40.5412	Info	RemoteServer.Router	Registering interface: TcpServer	
+2013-08-10 10:10:40.6253	Info	RemoteServer.Router	Registering interface: BluetoothServer	
+2013-08-10 10:10:42.5704	Info	RemoteServer.Router	Registering interface: UdpServer	
+2013-08-10 10:10:42.5904	Info	RemoteServer.Router	Anonymous client accepted: 0.0.0.0:9512	
+2013-08-10 10:10:42.6234	Info	RemoteServer.Server	Server started	
+2013-08-10 10:10:52.8490	Info	RemoteServer.Updater	Checking for updates...	
+2013-08-10 10:10:56.3612	Info	RemoteServer.Updater	No updates for 2.9.0.1488	
+2013-08-10 10:11:08.2018	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 10:11:08.2018	Info	RemoteServer.Router	Creating client connection: 114bb854-5047-4d23-abda-d42b0d6d67c8	
+2013-08-10 10:11:08.2138	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 10:11:08.5959	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 10:11:08.6629	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 10:11:08.6819	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:11:08.6819	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 10:11:08.7119	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 10:11:08.7419	Info	RemoteServer.Connection	Sync requetsed	
+2013-08-10 10:11:08.7509	Info	RemoteServer.Connection	Sending new remotes	
+2013-08-10 10:11:08.7509	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 10:11:11.8590	Info	RemoteServer.Connection	Layout requested (Relmtech.Basic Input)	
+2013-08-10 10:11:50.7243	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:12:10.3364	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 10:12:10.3364	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:12:10.3514	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:12:10.4594	Info	RemoteServer.Session	State requested	
+2013-08-10 10:13:01.1663	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:15:33.0920	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:15:33.0920	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:15:49.9319	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:15:50.0520	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:15:50.0520	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:15:50.1360	Info	RemoteServer.Session	State requested	
+2013-08-10 10:16:33.7465	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:16:34.0045	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:16:55.4927	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:16:58.0928	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:16:58.0928	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:16:58.2158	Info	RemoteServer.Session	State requested	
+2013-08-10 10:16:59.2339	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:16:59.4859	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:17:04.1822	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:17:04.1822	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:17:04.3482	Info	RemoteServer.Session	State requested	
+2013-08-10 10:17:05.4693	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:17:05.7293	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:17:10.8936	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:17:10.8936	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:17:25.6624	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:22:25.8206	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 10:22:25.8206	Info	RemoteServer.Router	Removing connection: 114bb854-5047-4d23-abda-d42b0d6d67c8	
+2013-08-10 10:22:25.8206	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 10:38:26.6065	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 10:38:26.6065	Info	RemoteServer.Router	Creating client connection: 3c3f1ffe-7a2e-496d-ab21-491328934619	
+2013-08-10 10:38:26.6065	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 10:38:26.6065	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 10:38:26.6225	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 10:38:26.6385	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:38:26.6455	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 10:38:26.6695	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 10:38:26.6695	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 10:38:26.6695	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:38:26.6695	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:38:27.6506	Info	RemoteServer.Connection	Sync requetsed	
+2013-08-10 10:38:27.6506	Info	RemoteServer.Connection	Remotes are up-to-date	
+2013-08-10 10:38:27.6626	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 10:38:27.7606	Info	RemoteServer.Connection	Layout requested (Relmtech.Boxee (Keyboard))	
+2013-08-10 10:38:27.8476	Info	RemoteServer.Connection	Layout requested (Relmtech.Boxee (Web))	
+2013-08-10 10:38:27.9176	Info	RemoteServer.Connection	Layout requested (Unified Intents.BSPlayer)	
+2013-08-10 10:38:28.0916	Info	RemoteServer.Connection	Layout requested (Relmtech.Chrome)	
+2013-08-10 10:38:28.1466	Info	RemoteServer.Connection	Layout requested (Itablish.Custom Mixed)	
+2013-08-10 10:38:28.1956	Info	RemoteServer.Connection	Layout requested (Itablish.Custom Run)	
+2013-08-10 10:38:28.3216	Info	RemoteServer.Connection	Layout requested (Itablish.Custom Windows)	
+2013-08-10 10:38:28.3786	Info	RemoteServer.Connection	Layout requested (Itablish.Custom Xbox 360)	
+2013-08-10 10:38:28.4526	Info	RemoteServer.Connection	Layout requested (Relmtech.File Manager)	
+2013-08-10 10:38:28.4836	Info	RemoteServer.Connection	Layout requested (Relmtech.Firefox)	
+2013-08-10 10:38:28.5727	Info	RemoteServer.Connection	Layout requested (Relmtech.foobar2000)	
+2013-08-10 10:38:28.6397	Info	RemoteServer.Connection	Layout requested (Unified Intents.Google Music)	
+2013-08-10 10:38:28.7217	Info	RemoteServer.Connection	Layout requested (Relmtech.Hulu Desktop)	
+2013-08-10 10:38:28.7887	Info	RemoteServer.Connection	Layout requested (Relmtech.Hulu Web)	
+2013-08-10 10:38:28.8177	Info	RemoteServer.Connection	Layout requested (Relmtech.Internet Explorer)	
+2013-08-10 10:38:28.9587	Info	RemoteServer.Connection	Layout requested (Relmtech.iTunes)	
+2013-08-10 10:38:29.0587	Info	RemoteServer.Connection	Layout requested (Relmtech.J River)	
+2013-08-10 10:38:29.1077	Info	RemoteServer.Connection	Layout requested (Relmtech.Keyboard)	
+2013-08-10 10:38:29.4247	Info	RemoteServer.Connection	Layout requested (Relmtech.Keyboard (Function))	
+2013-08-10 10:38:29.5647	Info	RemoteServer.Connection	Layout requested (Relmtech.Keyboard (German))	
+2013-08-10 10:38:29.8937	Info	RemoteServer.Connection	Layout requested (Relmtech.Keyboard (Russian))	
+2013-08-10 10:38:30.2347	Info	RemoteServer.Connection	Layout requested (Relmtech.Keyboard (Swedish))	
+2013-08-10 10:38:30.5248	Info	RemoteServer.Connection	Layout requested (Relmtech.Media Player Classic)	
+2013-08-10 10:38:30.5978	Info	RemoteServer.Connection	Layout requested (Relmtech.Media Portal)	
+2013-08-10 10:38:30.6508	Info	RemoteServer.Connection	Layout requested (Relmtech.MediaMonkey)	
+2013-08-10 10:38:30.7108	Info	RemoteServer.Connection	Layout requested (Relmtech.Monitor)	
+2013-08-10 10:38:30.7698	Info	RemoteServer.Connection	Layout requested (Relmtech.Navigation)	
+2013-08-10 10:38:30.9488	Info	RemoteServer.Connection	Layout requested (Relmtech.Netflix)	
+2013-08-10 10:38:30.9798	Info	RemoteServer.Connection	Layout requested (Relmtech.Numpad)	
+2013-08-10 10:38:31.1528	Info	RemoteServer.Connection	Layout requested (Relmtech.Opera)	
+2013-08-10 10:38:31.2038	Info	RemoteServer.Connection	Layout requested (Relmtech.Pandora)	
+2013-08-10 10:38:31.2348	Info	RemoteServer.Connection	Layout requested (Relmtech.Picasa)	
+2013-08-10 10:38:31.2718	Info	RemoteServer.Connection	Layout requested (Relmtech.Power)	
+2013-08-10 10:38:31.3388	Info	RemoteServer.Connection	Layout requested (Relmtech.PowerPoint Advanced)	
+2013-08-10 10:38:31.3828	Info	RemoteServer.Connection	Layout requested (Relmtech.PowerPoint Basic)	
+2013-08-10 10:38:31.4078	Info	RemoteServer.Connection	Layout requested (Relmtech.Send Text)	
+2013-08-10 10:38:31.4268	Info	RemoteServer.Connection	Layout requested (Relmtech.Spotify)	
+2013-08-10 10:38:31.4568	Info	RemoteServer.Connection	Layout requested (Relmtech.Spotify Advanced)	
+2013-08-10 10:38:31.5818	Info	RemoteServer.Connection	Layout requested (Relmtech.Start)	
+2013-08-10 10:38:31.6038	Info	RemoteServer.Connection	Layout requested (Relmtech.Task Manager)	
+2013-08-10 10:38:31.6288	Info	RemoteServer.Connection	Layout requested (UnifiedIntents.Tellstick Live!)	
+2013-08-10 10:38:31.6708	Info	RemoteServer.Connection	Layout requested (Relmtech.USB-UIRT Helper)	
+2013-08-10 10:38:31.7038	Info	RemoteServer.Connection	Layout requested (Relmtech.VLC (Keyboard))	
+2013-08-10 10:38:31.8068	Info	RemoteServer.Connection	Layout requested (Relmtech.VLC (Web))	
+2013-08-10 10:38:31.8688	Info	RemoteServer.Connection	Layout requested (Relmtech.Winamp)	
+2013-08-10 10:38:31.9068	Info	RemoteServer.Connection	Layout requested (Unified Intents.Windows 8)	
+2013-08-10 10:38:31.9678	Info	RemoteServer.Connection	Layout requested (Relmtech.Windows Media Center)	
+2013-08-10 10:38:32.0329	Info	RemoteServer.Connection	Layout requested (Relmtech.Windows Media Player)	
+2013-08-10 10:38:32.0709	Info	RemoteServer.Connection	Layout requested (Relmtech.Windows Photo Viewer)	
+2013-08-10 10:38:32.1079	Info	RemoteServer.Connection	Layout requested (Relmtech.XBMC (Keyboard))	
+2013-08-10 10:38:32.1699	Info	RemoteServer.Connection	Layout requested (Relmtech.XBMC Advanced)	
+2013-08-10 10:38:32.3019	Info	RemoteServer.Connection	Layout requested (Relmtech.YouTube)	
+2013-08-10 10:38:37.7552	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:38:38.1732	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:38:44.1635	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:38:44.1635	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:38:44.2646	Info	RemoteServer.Session	State requested	
+2013-08-10 10:39:05.3488	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:39:05.5758	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:39:08.8390	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:39:08.8390	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:39:54.0585	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:39:54.1786	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:39:54.1786	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:39:54.2766	Info	RemoteServer.Session	State requested	
+2013-08-10 10:40:33.8558	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:40:34.1148	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:40:35.6389	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:40:35.6389	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 10:40:35.7649	Info	RemoteServer.Session	State requested	
+2013-08-10 10:41:09.2218	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:41:09.4329	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:41:13.6271	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:41:13.6281	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:42:15.0366	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:42:16.9237	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:42:16.9237	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:43:33.9531	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:43:44.5767	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:43:44.5767	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:44:36.6537	Info	RemoteServer.Session	Unload requested	
+2013-08-10 10:50:54.3373	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 10:50:54.3373	Info	RemoteServer.Router	Removing connection: 3c3f1ffe-7a2e-496d-ab21-491328934619	
+2013-08-10 10:50:54.3373	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 10:58:43.7922	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 10:58:43.7922	Info	RemoteServer.Router	Creating client connection: 25d9682c-80f2-4688-9c80-abb662b46015	
+2013-08-10 10:58:43.7922	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 10:58:43.8642	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 10:58:43.8812	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 10:58:43.8952	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 10:58:43.8952	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 10:58:43.9092	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 10:58:43.9232	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 10:58:43.9442	Info	RemoteServer.Session	Load requested	
+2013-08-10 10:58:43.9442	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 10:58:58.4840	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:01:19.0140	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:01:19.0140	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:01:26.2725	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:02:24.2998	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:02:24.2998	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:02:33.3113	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:02:33.4863	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:02:44.0939	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 11:02:44.0939	Info	RemoteServer.Router	Removing connection: 25d9682c-80f2-4688-9c80-abb662b46015	
+2013-08-10 11:02:44.0939	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 11:03:10.4764	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 11:03:10.4764	Info	RemoteServer.Router	Creating client connection: 38ddec59-8d7a-4837-a63d-6e9869df9544	
+2013-08-10 11:03:10.4764	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 11:03:10.4894	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 11:03:10.5044	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 11:03:10.5164	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:03:10.5164	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 11:03:10.5424	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 11:03:14.5396	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:03:18.0999	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 11:03:18.0999	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:03:18.0999	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:04:55.9694	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:06:19.6032	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:06:19.6032	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:06:21.1773	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:09:22.1607	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 11:09:22.1607	Info	RemoteServer.Router	Removing connection: 38ddec59-8d7a-4837-a63d-6e9869df9544	
+2013-08-10 11:09:22.1607	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 11:09:27.7550	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 11:09:27.7550	Info	RemoteServer.Router	Creating client connection: ad2648c4-ac73-469e-8791-f115fa37ba50	
+2013-08-10 11:09:27.7550	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 11:09:27.7730	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 11:09:27.7980	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 11:09:27.8330	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:09:27.8330	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 11:09:27.9210	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 11:10:43.6813	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 11:10:43.6813	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:10:43.6813	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:11:08.8718	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:11:25.1367	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:11:25.1367	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:11:27.3818	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:11:27.9869	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:11:27.9869	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:11:45.0228	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:11:45.3329	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:12:11.7504	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:12:17.4617	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:12:17.4617	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:12:20.0768	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:12:20.6399	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:12:20.6399	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:12:57.2508	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:13:36.8809	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:13:36.8809	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:13:49.9709	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:13:51.4509	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:13:51.4509	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:13:57.0309	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:17:09.7612	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 11:17:09.7612	Info	RemoteServer.Router	Removing connection: ad2648c4-ac73-469e-8791-f115fa37ba50	
+2013-08-10 11:17:09.7612	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 11:25:37.9359	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 11:25:37.9379	Info	RemoteServer.Router	Creating client connection: c491f62f-7907-44c9-8230-57c99aa08f35	
+2013-08-10 11:25:37.9379	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 11:25:37.9379	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 11:25:37.9909	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 11:25:38.0029	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:25:38.0029	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 11:25:38.0249	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 11:26:36.8923	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:26:41.1795	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 11:26:41.1815	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:26:41.1815	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:27:54.7127	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:27:57.1049	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:27:57.1049	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:29:10.8181	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:29:16.3994	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:29:16.3994	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:29:57.8988	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:30:04.7112	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:30:04.7112	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:30:19.3570	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:34:02.9638	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:34:02.9638	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:34:05.0099	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:37:50.3898	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 11:37:50.3898	Info	RemoteServer.Router	Removing connection: c491f62f-7907-44c9-8230-57c99aa08f35	
+2013-08-10 11:37:50.3898	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 11:37:56.7192	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 11:37:56.7192	Info	RemoteServer.Router	Creating client connection: 289c6e3c-81fc-42e8-b886-0a57d5b97160	
+2013-08-10 11:37:56.7192	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 11:37:56.7442	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 11:37:56.7982	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 11:37:56.8112	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:37:56.8112	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 11:37:56.8412	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 11:37:56.8412	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 11:37:56.8412	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:37:56.8412	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:38:35.7584	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:38:50.2662	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:38:50.2672	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:39:16.7688	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:39:31.5166	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:39:31.5166	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:41:22.9180	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:42:38.0303	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:42:38.0303	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:43:14.9244	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:43:17.6335	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:43:17.6335	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:43:32.4564	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:43:53.5966	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:43:53.5966	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:44:08.0574	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:44:14.3188	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:44:14.3188	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:44:52.4840	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:44:54.4941	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:44:54.4941	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:46:27.7924	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:46:44.4964	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:46:44.4964	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:47:22.6595	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:47:33.1281	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:47:33.1281	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:47:54.4844	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:47:55.8124	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:47:55.8124	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:48:58.8160	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:49:15.3740	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:49:15.3740	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:49:19.4652	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:49:47.5488	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:49:47.5488	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:50:19.1896	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:50:23.4109	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:50:23.4109	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:50:38.8368	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:50:40.4699	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:50:40.4699	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:50:56.2568	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:51:02.0531	Info	RemoteServer.Session	Load requested	
+2013-08-10 11:51:02.0531	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 11:51:54.3681	Info	RemoteServer.Session	Unload requested	
+2013-08-10 11:57:09.2980	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 11:57:09.2980	Info	RemoteServer.Router	Removing connection: 289c6e3c-81fc-42e8-b886-0a57d5b97160	
+2013-08-10 11:57:09.2980	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 11:59:58.0907	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 11:59:58.0907	Info	RemoteServer.Router	Creating client connection: 2d5c6aac-2e1e-419b-9ae8-1382f120287b	
+2013-08-10 11:59:58.0907	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 11:59:58.1147	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 11:59:58.1397	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 11:59:58.1517	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 11:59:58.1517	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 11:59:58.1807	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 12:00:04.1030	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 12:00:04.1030	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:00:04.1030	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:00:07.0852	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:00:08.6193	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:00:08.6193	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:01:30.9780	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:03:20.2592	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:03:20.2592	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:05:14.9628	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:05:19.6661	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:05:19.6661	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:05:46.0816	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:05:49.0367	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:05:49.0367	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:06:03.5976	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:06:31.0181	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:06:31.0181	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:08:20.6084	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:08:39.6625	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:08:39.6625	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:09:48.3204	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:09:55.6068	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:09:55.6068	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:10:16.2830	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:10:18.1881	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:10:18.1881	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:11:31.5223	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:12:28.5286	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:12:28.5286	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:12:58.9203	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:13:02.0785	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:13:02.0785	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:13:33.4373	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:13:49.3722	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:13:49.3722	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:14:15.4157	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:14:28.6005	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:14:28.6005	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:15:04.6625	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:15:14.8861	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:15:14.8861	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:15:20.3924	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:15:22.6446	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:15:22.6446	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:15:27.9549	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:15:32.3221	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:15:32.3221	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:16:15.9446	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:16:18.9668	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:16:18.9668	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:17:13.0479	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:17:15.1990	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:17:15.1990	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:17:58.0294	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:18:05.4659	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:18:05.4659	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:18:37.6087	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:18:49.6214	Info	RemoteServer.Session	Load requested	
+2013-08-10 12:18:49.6214	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 12:18:58.6229	Info	RemoteServer.Session	Unload requested	
+2013-08-10 12:19:35.0860	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 12:19:35.0860	Info	RemoteServer.Router	Removing connection: 2d5c6aac-2e1e-419b-9ae8-1382f120287b	
+2013-08-10 12:19:35.0860	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 13:03:06.6656	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 13:03:11.0858	Info	RemoteServer.Router	Creating client connection: 0737d5b9-e24f-4df2-ada8-73c892dfe6b6	
+2013-08-10 13:03:11.0858	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 13:03:11.0858	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 13:03:11.1178	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 13:03:11.1308	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 13:03:11.1308	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 13:03:11.4099	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 13:03:11.4099	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 13:03:11.4099	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:03:11.4099	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:04:30.2534	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:07:20.2421	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:07:20.2421	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:07:21.3952	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:08:55.2565	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:08:55.2565	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:09:35.5668	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:10:51.4642	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:10:51.4642	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:11:32.8645	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:11:33.6796	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:11:33.6796	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:11:41.2940	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:11:41.8171	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:11:41.8171	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:11:44.1682	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:11:44.6182	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 13:12:14.1409	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 13:12:17.5851	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:12:17.5851	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:13:55.2927	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:13:59.3119	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:13:59.3119	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:15:07.2888	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:15:09.7599	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:15:09.7609	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:15:48.8672	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:16:14.9687	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:16:14.9697	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:16:29.8275	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:16:33.3707	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:16:33.3707	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:16:48.2906	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:16:52.2148	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:16:52.2148	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:17:07.1537	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:17:49.8011	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:17:49.8021	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:18:03.1849	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:18:04.1999	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:18:04.1999	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:19:12.6058	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:19:15.4750	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:19:15.4750	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:19:46.5038	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:21:57.3313	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:21:57.3313	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:22:12.2411	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:24:06.7217	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:24:06.7217	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:24:38.1895	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:24:39.7265	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:24:39.7265	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:24:57.5996	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:25:07.5931	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:25:07.5931	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:25:55.1679	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:25:57.6260	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:25:57.6260	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:26:01.3052	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:26:01.5242	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:26:01.5242	Info	RemoteServer.Session	Sending new layout	
+2013-08-10 13:26:01.7072	Info	RemoteServer.Session	State requested	
+2013-08-10 13:26:05.3034	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:26:05.5175	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 13:26:08.5226	Info	RemoteServer.Session	Load requested	
+2013-08-10 13:26:08.5226	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 13:27:43.9301	Info	RemoteServer.Session	Unload requested	
+2013-08-10 13:31:44.3318	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 13:31:44.3318	Info	RemoteServer.Router	Removing connection: 0737d5b9-e24f-4df2-ada8-73c892dfe6b6	
+2013-08-10 13:31:44.3318	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 14:00:49.3124	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 14:00:49.3124	Info	RemoteServer.Router	Creating client connection: 3f88b104-1e70-4f4a-a747-5da58f108057	
+2013-08-10 14:00:49.3124	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 14:00:49.3764	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 14:00:49.4084	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 14:00:49.4414	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 14:00:49.4414	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 14:00:49.4724	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 14:00:49.4724	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 14:00:49.4724	Info	RemoteServer.Session	Load requested	
+2013-08-10 14:00:49.4724	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 14:00:57.1298	Info	RemoteServer.Session	Unload requested	
+2013-08-10 14:05:57.4060	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 14:05:57.4060	Info	RemoteServer.Router	Removing connection: 3f88b104-1e70-4f4a-a747-5da58f108057	
+2013-08-10 14:05:57.4060	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	
+2013-08-10 14:13:05.2274	Info	RemoteServer.Router	Client accepted: BluetoothServer, 0C715D95B2AE:7	
+2013-08-10 14:13:05.2294	Info	RemoteServer.Router	Creating client connection: 278f1a0e-21fd-4562-86c2-1eb5163a8c7c	
+2013-08-10 14:13:05.2294	Info	RemoteServer.Connection	Connection started for client 0C715D95B2AE:7	
+2013-08-10 14:13:05.2704	Info	RemoteServer.Connection	Handshake OK for 0C715D95B2AE:7	
+2013-08-10 14:13:05.3204	Info	RemoteServer.Connection	Authentication succeeded for 0C715D95B2AE:7	
+2013-08-10 14:13:05.3454	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 14:13:05.3454	Warn	RemoteServer.Connection	Could not create remote: UnifiedIntents.AsONE	System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'InTheHand.Net.Personal, Version=3.2.609.0, Culture=neutral, PublicKeyToken=ea38caa273134499' or one of its dependencies. The system cannot find the file specified.
+   at Sunwave.AsOneController..ctor()
+   at Sunwave.AsOneController.get_Instance()
+   at Sunwave.AsONE..ctor()
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)    at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at RemoteServer.Remotes.Loaders.TypeRemoteLoader.Create()
+   at RemoteServer.Remotes.RemoteProvider.Create(String id)
+   at RemoteServer.Connection.GetLayout(String id)
+2013-08-10 14:13:05.3775	Info	RemoteServer.Connection	Updating Fast: True	
+2013-08-10 14:13:05.3775	Info	RemoteServer.Connection	Creating session for: android-7334a6ad1c411987	
+2013-08-10 14:13:05.3775	Info	RemoteServer.Session	Load requested	
+2013-08-10 14:13:05.3775	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 14:15:38.2362	Info	RemoteServer.Session	Unload requested	
+2013-08-10 14:16:41.9978	Info	RemoteServer.Session	Load requested	
+2013-08-10 14:16:41.9978	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 14:17:41.1102	Info	RemoteServer.Session	Unload requested	
+2013-08-10 14:19:26.9533	Info	RemoteServer.Session	Load requested	
+2013-08-10 14:19:26.9533	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 14:19:36.6858	Info	RemoteServer.Session	Unload requested	
+2013-08-10 14:23:01.7966	Info	RemoteServer.Session	Load requested	
+2013-08-10 14:23:01.7966	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 14:23:46.1601	Info	RemoteServer.Session	Unload requested	
+2013-08-10 14:24:18.3019	Info	RemoteServer.Session	Load requested	
+2013-08-10 14:24:18.3019	Info	RemoteServer.Session	Layout is up-to-date. Sending state	
+2013-08-10 14:31:52.5959	Info	RemoteServer.Session	Unload requested	
+2013-08-10 14:31:53.0069	Info	RemoteServer.Connection	Hash requested	
+2013-08-10 14:32:20.1855	Info	RemoteServer.Router	Client disconnected: 0C715D95B2AE:7, Stopped	
+2013-08-10 14:32:20.1855	Info	RemoteServer.Router	Removing connection: 278f1a0e-21fd-4562-86c2-1eb5163a8c7c	
+2013-08-10 14:32:20.1855	Info	RemoteServer.Connection	Connection stopped for client 0C715D95B2AE:7	

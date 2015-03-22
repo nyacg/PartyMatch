@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ur:Remote xmlns:ur="http://unifiedremote.com/schemas/remote.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://unifiedremote.com/schemas/remote.xsd http://unifiedremote.com/schemas/remote.xsd"
+  Name="Custom Windows" Icon="exWindows.png" Author="Itablish" Description="Example: Windows keyboard shortcuts.">
+  <Actions>
+    <Action Name="Open Explorer">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>VK_E</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Run">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>VK_R</Extra>
+      </ActionRef>
+      <ActionRef Name="@keyboard" />
+    </Action>
+    <Action Name="Minimize All">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>VK_M</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Maximize">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>UP</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Minimize">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>DOWN</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Max Left">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>LEFT</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="Max Right">
+      <ActionRef Name="stroke" Target="Input">
+        <Extra>LWIN</Extra>
+        <Extra>RIGHT</Extra>
+      </ActionRef>
+    </Action>
+  </Actions>
+  <Layout Scroll="none">
+    <Row>
+      <Control Type="Button" OnClick="Open Explorer" Align="Center" Width="fill" Text="Open Explorer"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Run" Align="Center" Width="fill" Text="Run"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Minimize All" Align="Center" Width="fill" Text="Minimize All"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Maximize" Align="Center" Width="fill" Text="Maximize"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Minimize" Align="Center" Width="fill" Text="Minimize"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Max Left" Align="Center" Width="fill" Text="Max Left"/>
+    </Row>
+    <Row>
+      <Control Type="Button" OnClick="Max Right" Align="Center" Width="fill" Text="Max Right"/>
+    </Row>
+  </Layout>
+</ur:Remote>

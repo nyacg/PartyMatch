@@ -1,3 +1,6 @@
+var responseArray = [];
+var current_pane;
+
 $(document).ready(function(){
 	$.get('./getPolicy.php', function(data){
 		console.log(data);
@@ -6,7 +9,7 @@ $(document).ready(function(){
 			index = index + 1;
 			//console.log(index);
 			//console.log(object);
-			$('#pane-holder').append("<li class='pane" + index + " pane'><div class='img'></div><div>" + object.PolicyName + "</div><div class='like'></div><div class='dislike'></div></li>").children(".img");
+			$('#pane-holder').append("<li class='pane" + index + " pane' slug=" + object.Slug + "><div class='img'></div><div>" + object.PolicyName + "</div><div class='like'></div><div class='dislike'></div></li>").children(".img");
 			$('.pane' + index + '> .img').css({"background": "url('./img/pane/pane" + index + ".jpg') no-repeat scroll center center", "background-size": "cover"});
 		});
 
@@ -15,16 +18,21 @@ $(document).ready(function(){
 		 */
 		$("#tinderslide").jTinder({
 			// dislike callback
-		    onDislike: function (item) {
-			    // set the status text
-		        //$('#status').html('Dislike image ' + (item.index()+1));
-		        console.log(item);
+		    onDislike: function ($item) {
+		    	var slug = $item.attr('slug');
+		        var obj = {};
+		        obj[slug] = -1;
+		        responseArray.push(obj);
+		        handleLast(responseArray);
 		    },
 			// like callback
-		    onLike: function (item) {
-			    // set the status text
-		        //$('#status').html('Like image ' + (item.index()+1));
-		        console.log(item);
+		    onLike: function ($item) {
+		    	var slug = $item.attr('slug');
+		        var obj = {};
+		        obj[slug] = 1;
+		        responseArray.push(obj);
+		        //console.log(responseArray);
+		        handleLast(responseArray);
 		    },
 			animationRevertSpeed: 200,
 			animationSpeed: 400,
@@ -45,8 +53,28 @@ $(document).ready(function(){
 		console.log("getting data failed");
 	});
 
+	$('.skip').click(function(){
+		var $this = $('.pane').not('.hidden').last();
+		slug = $this.attr('slug');
+		console.log(slug);
+		var index = $this.eq();
+
+		$this.hide();
+		$this.addClass('hidden');
+		var obj = {};
+		obj[slug] = 0;
+		responseArray.push(obj);
+		handleLast(responseArray);
+	});
+
+
+
 });
 
 function zoomIn(){
 	console.log("click, not dragged");
+}
+
+function handleLast(responseArray){
+	$('.bigcard').show();
 }

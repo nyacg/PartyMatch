@@ -15,9 +15,9 @@
 </head>
 <body>
     <div class="bigcard">
-        <div class="wrap">
+       <!-- <div class="wrap">
             <div class="img"></div>
-        </div>
+        </div>-->
     </div>
     <!-- start padding container -->
     <div class="wrap">

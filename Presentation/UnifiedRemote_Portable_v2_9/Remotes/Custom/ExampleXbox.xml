@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--More information about keycodes for XBOX is avalible at this site:http://www.remotecentral.com/cgi-bin/mboard/rc-discrete/thread.cgi?5489 
+  It is a bit hard to get some funktion working. If you have the real xbox remote i recomend that you record from that and don't use this website.
+  Also sometimes the Xbox dosen't react directly for some reason that we don't have any control over. Use this as an example as to what's possible to do with UsbUirt.-->
+<ur:Remote xmlns:ur="http://unifiedremote.com/schemas/remote.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://unifiedremote.com/schemas/remote.xsd http://unifiedremote.com/schemas/remote.xsd"
+  Name="Custom Xbox 360" Icon="exXbox.png" Author="Itablish" Description="Example: Xbox 360 using USB-UIRT">
+  <Actions>
+    <Action Name="on">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 001F 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0020 0020 0020 0020 0020 0020 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="off">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0020 0020 0020 0020 0010 0010 0020 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="windows">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0021 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0020 0020 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="xbox">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0020 0010 0010 0020 0010 0010 0020 0020 0010 0010 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="stop">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0020 0010 0010 0020 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="up">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0021 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="down">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0021 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0010 0010 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="left">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0021 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="right">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0010 0010 0020 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="select">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="pause">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0021 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0020 0010 0010 0010 0010 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="rewind">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 001F 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0020 0020 0020 0020 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="play">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0020 0020 0010 0010 0020 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="forward">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0020 0020 0020 0010 0010 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="previous">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0020 0020 0010 0010 09BC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="next">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0020 0020 0020 0010 09AC</Extra>
+      </ActionRef>
+    </Action>
+    <Action Name="back">
+      <ActionRef Name="Pronto" Target="Core.UsbUirt">
+        <Extra Name="Code">0000 0073 0000 0020 0060 0020 0010 0010 0010 0010 0010 0020 0010 0020 0030 0020 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0020 0020 0010 0010 0010 0010 0010 0010 0020 0020 0010 0010 0010 0010 0020 0010 0010 09BC</Extra>
+      </ActionRef>
+    </Action>
+  </Actions>
+  <Layout Scroll="none">
+    <Row>
+      <Control Type="Orb" OnClick="on" Text="On"/>
+      <Control Type="Orb" OnClick="windows" Icon="WINDOWS"/>
+      <Control Type="Orb" OnClick="off" Text="Off"/>
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="stop" Icon="STOP"/>
+      <Control Type="Orb" OnClick="xbox" Text="Xbox"/>
+      <Control Type="Orb" OnClick="pause" Icon="PAUSE"/>
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="rewind" Icon="RWD"/>
+      <Control Type="Orb" OnClick="play" Icon="PLAY"/>
+      <Control Type="Orb" OnClick="forward" Icon="FF"/>
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="previous" Icon="PREVIOUS"/>
+      <Control Type="Orb" OnClick="up" Icon="UP"/>
+      <Control Type="Orb" OnClick="next" Icon="NEXT"/>
+    </Row>
+    <Row>
+      <Control Type="Orb" OnClick="left" Icon="LEFT"/>
+      <Control Type="Orb" OnClick="select" Icon="SELECT"/>
+      <Control Type="Orb" OnClick="right" Icon="RIGHT"/>
+    </Row>
+    <Row>      
+      <Control Type="Orb" OnClick="down" Align="Center" Icon="DOWN" />
+      <Control Type="Orb" OnClick="back" Align="Right" Icon="BACK1" />
+    </Row>
+  </Layout>
+</ur:Remote>

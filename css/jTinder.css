@@ -8,6 +8,7 @@ html, body {
 body {
     overflow: hidden;
     font-family: sans-serif;
+    background: white;
 }
 
 /* Wrapper with padding */

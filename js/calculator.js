@@ -23,19 +23,25 @@ $(document).ready(function(){
 	});
 });
 function getScore(sentFromRob){
+	console.log(sentFromRob);
 	var score = 0;
 	var scoreParty = new Map();
 	var agreed = new Array();
 	for (var key of translate.keys()){
-		for(var responce in sentFromRob){
+		for(var responce of sentFromRob.keys()){
 			for(var i = mydata.length - 1; i >0; i--){
 				if(mydata[i]['Slug'] == responce){
-					score += (sentFromRob[responce] * mydata[i][key]);
+					score += (sentFromRob.get(responce) * mydata[i][key]);
 				}
 			}
 		}
 		scoreParty.set(translate.get(key), score);
 		score = 0;
 	}
-	return scoreParty;
+	console.log(scoreParty);
+
+	if($('.pane').not('.hidden').size() == 1){
+		console.log("soidjf");
+		handleLast();
+	}
 }

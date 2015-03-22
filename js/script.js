@@ -1,4 +1,4 @@
-var responseArray = [];
+var responseMap = new Map();
 var current_pane;
 
 var parties = {con: {name: "Conservative", color: "#2C3E50"}, lab: {name: "Labour", color: "#E74C3C"}, lib : {name: "Liberal Democrats", color: "#F1C40F"}};
@@ -22,19 +22,16 @@ $(document).ready(function(){
 			// dislike callback
 		    onDislike: function ($item) {
 		    	var slug = $item.attr('slug');
-		        var obj = {};
-		        obj[slug] = -1;
-		        responseArray.push(obj);
-		        handleLast(responseArray);
+		        //var obj = {};
+		        //obj[slug] = -1;
+		        responseMap.set(slug, -1);
+		        getScore(responseMap);
 		    },
 			// like callback
 		    onLike: function ($item) {
 		    	var slug = $item.attr('slug');
-		        var obj = {};
-		        obj[slug] = 1;
-		        responseArray.push(obj);
-		        //console.log(responseArray);
-		        handleLast(responseArray);
+		        responseMap.set(slug, 1);
+		        getScore(responseMap);
 		    },
 			animationRevertSpeed: 200,
 			animationSpeed: 400,
@@ -66,7 +63,7 @@ $(document).ready(function(){
 		var obj = {};
 		obj[slug] = 0;
 		responseArray.push(obj);
-		handleLast(responseArray);
+		getScore(responseArray);
 	});
 
 
@@ -77,7 +74,8 @@ function zoomIn(){
 	console.log("click, not dragged");
 }
 
-function handleLast(responseArray){
+function handleLast(){
+	console.log("last");
 	$('.top-colour').css('background-color', parties.con.color);
 	$('.party-name').text(parties.con.name);
 	$('.bigcard').show();

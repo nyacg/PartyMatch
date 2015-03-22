@@ -46,8 +46,8 @@
     <!-- jTinder lib -->
     <script type="text/javascript" src="js/jquery.jTinder.js"></script>
     <!-- jTinder initialization script -->
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/ui.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/calculator.js"></script>
 
 </body>
 </html>

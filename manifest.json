@@ -1,14 +1,17 @@
 {
   "name": "Party Match",
-  "start_url": "index.php",
-  "display": "standalone",
-  "orientation": "portrait"
-
+  
   "icons": [
     {
       "src": "img/ion.png",
       "sizes": "192x192",
       "type": "image/png",
       "density": "4.0"
-    }]
+    }],
+
+  "start_url": "index.php",
+  "display": "standalone",
+  "orientation": "portrait"
+
+  
 }

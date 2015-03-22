@@ -19,37 +19,8 @@
     <div class="wrap">
         <!-- start jtinder container -->
         <div id="tinderslide">
-            <ul>
-                <li class="pane1 pane">
-                    <div class="img"></div>
-                    <div>Miami Beach</div>
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane2 pane">
-                    <div class="img"></div>
-                    <div>San Francisco</div>
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane3 pane">
-                    <div class="img"></div>
-                    <div>Chicago</div>
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane4 pane">
-                    <div class="img"></div>
-                    <div>New York</div>
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane5 pane">
-                    <div class="img"></div>
-                    <div>Beach</div>
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
+            <ul id="pane-holder">
+                <!-- panes are added with JavaScript here -->
             </ul>
         </div>
         <!-- end jtinder container -->
@@ -63,9 +34,6 @@
         <a href="#" class="like"><i class="fa fa-heart fa-3x"></i></a>
         <a href="#" class="small skip"><i class="fa fa-step-forward fa-2x"></i></a>
     </div>
-
-    <!-- jTinder status text  -->
-    <div id="status"></div>
 
     <!-- jQuery lib -->
     <script type="text/javascript" src="js/jquery.min.js"></script>

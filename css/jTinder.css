@@ -12,7 +12,7 @@ body {
 
 /* Wrapper with padding */
 .wrap  {
-    height: 300px;
+    height: 410px;
     padding: 5%;
 }
 
@@ -121,7 +121,7 @@ body {
 
 /* Image container */
 .img {
-    height: 90%;
+    height: 80%;
     width: 100%;
     margin-bottom: 5px;
     position: relative;
@@ -221,28 +221,6 @@ body {
 
 .action a:focus {
     outline: none;
-}
-
-/* jTinder images */
-#tinderslide .pane5 .img {
-    background: url("../img/pane/pane5.jpg") no-repeat scroll center center;
-    background-size: cover;
-}
-#tinderslide .pane4 .img {
-    background: url("../img/pane/pane4.jpg") no-repeat scroll center center;
-    background-size: cover;
-}
-#tinderslide .pane3 .img {
-    background: url("../img/pane/pane3.jpg") no-repeat scroll center center;
-    background-size: cover;
-}
-#tinderslide .pane2 .img {
-    background: url("../img/pane/pane2.jpg") no-repeat scroll center center;
-    background-size: cover;
-}
-#tinderslide .pane1 .img {
-    background: url("../img/pane/pane1.jpg") no-repeat scroll center center;
-    background-size: cover;
 }
 
 /* jTinder status text */

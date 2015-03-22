@@ -161,7 +161,7 @@
 					}
 					break;
 			}
-		}
+		},
 	};
 
 	$.fn[ pluginName ] = function (options) {

@@ -1,7 +1,7 @@
 var responseMap = new Map();
 var current_pane;
 
-var parties = {con: {name: "Conservative", color: "#2C3E50"}, lab: {name: "Labour", color: "#E74C3C"}, lib : {name: "Liberal Democrats", color: "#F1C40F"}};
+var parties = {con: {name: "Conservative", color: "#2C3E50"}, lab: {name: "Labour", color: "#E74C3C"}, lib : {name: "Liberal Democrat", color: "#F1C40F"}};
 
 $(document).ready(function(){
 	$.get('./getPolicy.php', function(data){
@@ -74,9 +74,22 @@ function zoomIn(){
 	console.log("click, not dragged");
 }
 
-function handleLast(){
-	console.log("last");
-	$('.top-colour').css('background-color', parties.con.color);
-	$('.party-name').text(parties.con.name);
+function handleLast(scores){
+	var scores = scores;
+	var map = new Map();
+	map.set(scores.get("Conservative"), 'con');
+	map.set(scores.get("Labour"), 'lab');
+	map.set(scores.get("Liberal Democrat"), 'lib');
+
+	var max = Math.max(scores.get("Conservative"), scores.get("Labour"), scores.get("Liberal Democrat"));
+	var index = map.get(max);
+
+	console.log(index);
+
+	var party = parties[index];
+
+	//console.log("last");
+	$('.top-colour').css('background-color', party.color);
+	$('.party-name').text(party.name);
 	$('.bigcard').show();
 }

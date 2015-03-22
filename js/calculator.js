@@ -23,7 +23,7 @@ $(document).ready(function(){
 	});
 });
 function getScore(sentFromRob){
-	console.log(sentFromRob);
+	//console.log(sentFromRob);
 	var score = 0;
 	var scoreParty = new Map();
 	var agreed = new Array();
@@ -41,7 +41,7 @@ function getScore(sentFromRob){
 	console.log(scoreParty);
 
 	if($('.pane').not('.hidden').size() == 1){
-		console.log("soidjf");
-		handleLast();
+		//console.log("soidjf");
+		handleLast(scoreParty);
 	}
 }

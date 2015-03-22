@@ -4,8 +4,8 @@ $(document).ready(function(){
 
 		$.each(data, function(index, object){
 			index = index + 1;
-			console.log(index);
-			console.log(object);
+			//console.log(index);
+			//console.log(object);
 			$('#pane-holder').append("<li class='pane" + index + " pane'><div class='img'></div><div>" + object.PolicyName + "</div><div class='like'></div><div class='dislike'></div></li>").children(".img");
 			$('.pane' + index + '> .img').css({"background": "url('./img/pane/pane" + index + ".jpg') no-repeat scroll center center", "background-size": "cover"});
 		});

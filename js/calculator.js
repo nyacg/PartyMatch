@@ -31,6 +31,7 @@ $(document).ready(function(){
 function getScore(responseArray){
 	var score = 0;
 	var scoreParty = new Map();
+	var agreed = new Array();
 	for (var i = responseArray.length - 1; i >= 0; i--) {
 		for (var k = mydata.length - 1; k >= 0; k--) {
 			if (responseArray[i].Slug == mydata[k].Slug) {
@@ -38,6 +39,9 @@ function getScore(responseArray){
 					if(key != 'Slug'){
 						score += (responseArray[i][key] * mydata[k][key]);
 						scoreParty.set(key, score);
+						if(responseArray[i][key] * mydata[k][key] > 0.5){
+							agreed.push(responseArray[i]['Slug']);
+						}
 					}
 				};
 				score = 0;
@@ -45,6 +49,7 @@ function getScore(responseArray){
 		};
 	//example of getting score of party
 	console.log(scoreParty.get("Con"));
+	console.log(agreed);
 	//how to get all scores
 	for (var key of scoreParty.keys()) {
   		console.log(translate.get(key), scoreParty.get(key));

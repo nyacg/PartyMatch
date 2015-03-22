@@ -1,6 +1,8 @@
 var responseArray = [];
 var current_pane;
 
+var parties = {con: {name: "Conservative", color: "#2C3E50"}, lab: {name: "Labour", color: "#E74C3C"}, lib : {name: "Liberal Democrats", color: "#F1C40F"}};
+
 $(document).ready(function(){
 	$.get('./getPolicy.php', function(data){
 		console.log(data);
@@ -76,5 +78,7 @@ function zoomIn(){
 }
 
 function handleLast(responseArray){
+	$('.top-colour').css('background-color', parties.con.color);
+	$('.party-name').text(parties.con.name);
 	$('.bigcard').show();
 }

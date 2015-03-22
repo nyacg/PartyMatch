@@ -15,9 +15,11 @@
 </head>
 <body>
     <div class="bigcard">
-       <!-- <div class="wrap">
-            <div class="img"></div>
-        </div>-->
+       <div class="wrap top-colour">
+            <!--<div class="img"></div>-->
+        </div>
+        <h1>You should vote:</h1>
+        <h1><em style="font-size: 2em" class='party-name'>Conservative</em></h1>
     </div>
     <!-- start padding container -->
     <div class="wrap">

@@ -1,8 +1,12 @@
 <?php
-	$myfile = fopen("data/policy.csv", "r") or die("Unable to open file!");
+	$file = fopen("./data/policy.csv", "r") or die("Unable to open file!");
 	$data = Array();
-	$data[] = fread($myfile,filesize("data/policy.csv"));
-	var_dump($data);
+	while(! feof($file)) {
+		$data[] = fgetcsv($file);
+	}
+
 	echo json_encode($data);
-	fclose($myfile);
+
+	//echo fread($file,filesize("./data/policy.csv"));
+	fclose($file);
 ?>

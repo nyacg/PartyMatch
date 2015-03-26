@@ -1,5 +1,5 @@
 /*
- * jTinder v.1.0.0
+ * jTinder v.1.0.0 - minimally modified by Robert Chandler
  * https://github.com/do-web/jTinder
  * Requires jQuery 1.7+, jQuery transform2d
  *

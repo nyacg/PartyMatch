@@ -60,10 +60,9 @@ $(document).ready(function(){
 
 		$this.hide();
 		$this.addClass('hidden');
-		var obj = {};
-		obj[slug] = 0;
-		responseArray.push(obj);
-		getScore(responseArray);
+	
+		responseMap.set(slug, 10);
+		getScore(responseMap);
 	});
 
 
@@ -75,7 +74,6 @@ function zoomIn(){
 }
 
 function handleLast(scores){
-	var scores = scores;
 	var map = new Map();
 	map.set(scores.get("Conservative"), 'con');
 	map.set(scores.get("Labour"), 'lab');
@@ -84,7 +82,7 @@ function handleLast(scores){
 	var max = Math.max(scores.get("Conservative"), scores.get("Labour"), scores.get("Liberal Democrat"));
 	var index = map.get(max);
 
-	console.log(index);
+	//console.log(index);
 
 	var party = parties[index];
 

@@ -18,8 +18,8 @@
        <div class="wrap top-colour">
             <!--<div class="img"></div>-->
         </div>
-        <h1 style="margin-left: 40px">You should vote:</h1>
-        <h1 style="margin-left: 40px"><em style="font-size: 2em" class='party-name'>Conservative</em></h1>
+        <h1 style="margin-left: 20px">You should vote:</h1>
+        <h1 style="margin-left: 20px"><em style="font-size: 2em" class='party-name'>Conservative</em></h1>
     </div>
     <!-- start padding container -->
     <div class="wrap">
